@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bc7247143fc4ea36dfa1e12dbccded8c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bc7247143fc4ea36dfa1e12dbccded8c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bc7247143fc4ea36dfa1e12dbccded8c = L.map(
+                "map_bc7247143fc4ea36dfa1e12dbccded8c",
+                {
+                    center: [45.77, 4.855],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5ac4af63de90d59f9b238940ac509ef8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_5ac4af63de90d59f9b238940ac509ef8.addTo(map_bc7247143fc4ea36dfa1e12dbccded8c);
+        
+    
+            var tile_layer_426dab54ba3d5d021e04c443c4045e12 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/999a86862b85a7c89a94ff39e5419394-1c68c326b2aba795c86264421ac042cd/tiles/{z}/{x}/{y}",
+                {"attribution": "Map Data \u0026copy; \u003ca href=\"https://earthengine.google.com/\"\u003eGoogle Earth Engine\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_426dab54ba3d5d021e04c443c4045e12.addTo(map_bc7247143fc4ea36dfa1e12dbccded8c);
+        
+    
+            var tile_layer_0c1da0a2f2af0b63e63ee89cc25e850f = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/effbe708aa5edeffdb1577ad6e39c257-c9b75d7cf5e3a5a200609a6fb785bc50/tiles/{z}/{x}/{y}",
+                {"attribution": "Map Data \u0026copy; \u003ca href=\"https://earthengine.google.com/\"\u003eGoogle Earth Engine\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_0c1da0a2f2af0b63e63ee89cc25e850f.addTo(map_bc7247143fc4ea36dfa1e12dbccded8c);
+        
+    
+            var tile_layer_7542016f62dcdec45889705842dd5087 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/b45c90e7620236ad229e44b388a25422-4cdaeeb409262ecc007f0f1f2dc015f8/tiles/{z}/{x}/{y}",
+                {"attribution": "Map Data \u0026copy; \u003ca href=\"https://earthengine.google.com/\"\u003eGoogle Earth Engine\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_7542016f62dcdec45889705842dd5087.addTo(map_bc7247143fc4ea36dfa1e12dbccded8c);
+        
+    
+            var layer_control_57736cb75b62cb6753ea2b2191699296_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_5ac4af63de90d59f9b238940ac509ef8,
+                },
+                overlays :  {
+                    "Elevation" : tile_layer_426dab54ba3d5d021e04c443c4045e12,
+                    "Land Surface Temperature" : tile_layer_0c1da0a2f2af0b63e63ee89cc25e850f,
+                    "Land Cover" : tile_layer_7542016f62dcdec45889705842dd5087,
+                },
+            };
+            let layer_control_57736cb75b62cb6753ea2b2191699296 = L.control.layers(
+                layer_control_57736cb75b62cb6753ea2b2191699296_layers.base_layers,
+                layer_control_57736cb75b62cb6753ea2b2191699296_layers.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_bc7247143fc4ea36dfa1e12dbccded8c);
+
+        
+</script>
+</html>
