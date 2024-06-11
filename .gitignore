@@ -1,0 +1,16 @@
+/I-Tree Eco/Interactive Tree and Plot Map/Shapefiles
+/I-Tree Eco/Shapefiles
+/I-Tree Eco/*.ieco
+.RData
+*.pdf
+*.mat
+/Lidar Simulation/lidarmodeling_202404
+/Lidar Simulation/Ian's code
+*.prj
+*.shp
+*.dbf
+*.cpg
+*.shx
+*.png
+*.rar
+*.log
